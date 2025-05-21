@@ -742,3 +742,73 @@ footer{
 .footer-left-text{
   
 }
+
+.behandlinger{
+  height: fit-content;
+  padding: 0; /* Optional, unless you need internal padding */
+  width: calc(100% - 60px); /* Full width minus 25px on each side */
+  margin: 0 auto; /* Push it 25px from each side */
+  margin-top: 150px;
+}
+.behandlingerText{
+  
+  width: 100%;
+  height: 400px;
+  text-align: center;
+}
+.behandlingerText h2{
+font-size: 128px;
+font-weight: bold;
+margin: 0;
+margin-bottom: 20px;
+}
+.behandlingerText p{
+  font-size: 36px;
+  font-weight: 600;
+  margin: 0 auto;
+  width: 60%;
+  }
+  .behandlingsKat{
+    display: flex;
+    gap: 140px;
+    margin-bottom: 50px;
+  }
+  .behandlingsKatLeft img{
+    height: 550px;
+    width: 550px;
+    border-radius: 20px;
+  }
+  .behandlingsKatRight{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .behandlingsKatRight h3{
+    font-size: 96px;
+    font-weight: 600;
+    margin: 20px 0;
+  }
+  .behandlingsKatRight p{
+    font-size: 32px;
+    font-weight: 400;
+    margin-top: 0;
+    width: 85%;
+  }
+  .behandlingsKatRight button{
+  background-color: #e44061;
+  color: white;
+  padding: 12px;
+  font-size: 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  width: 250px;
+  }
+.scrollProgress{
+  height: 15px;
+  width: 450px;
+  background-color: #76E0CB;
+  border-radius: 15px;
+}
