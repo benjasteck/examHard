@@ -1085,3 +1085,98 @@ margin-bottom: 20px;
   width: 100%;
   border-radius: 8px;
 }
+.wrapperOmOs{
+  width: calc(100% - 60px);
+  height: 700px;
+  margin: 0 auto;
+  
+  display: flex;
+  
+}
+.omOs{
+  width: 100%;
+  height: fit-content;
+background-image: linear-gradient(to left, #25857B, #40E0C0);
+}
+.omOsText{
+  width: 700px;
+  flex: 1;
+}
+.omOsText h2{
+  font-size: 132px; 
+  font-weight: 700;
+  color: white;
+  margin: 0;
+  margin-top: 10%;
+}
+.omOsText p{
+  font-size: 40px; 
+  color: white;
+  font-weight: 400;
+}
+.omOsBillede {
+             /* Pushes the whole image container to the right */
+  height: 100%;
+  display: flex;
+  align-items: center; 
+  justify-content: right;  
+  flex: 1;        /* Vertical centering */
+}
+
+.omOsBillede img { 
+  width: 80%;
+  height: auto;
+  flex-shrink: 0; 
+  margin-top: 10%;
+  margin-bottom: 10%;
+  border-radius: 15%;
+  object-fit: cover;
+}
+
+.medlemmer{
+  width: calc(100% - 60px);
+  height: 700px;
+  margin: 0 auto;
+  
+  margin-top: 100px;
+  display: flex;
+}
+.row{
+  display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.medlemLeft{
+  flex-basis: 35%;
+}
+.medlemLeft img{
+  height: 100%;
+  width: 100%;
+  object-fit: fill;
+  object-position: top;
+}
+.medlemRight{
+  flex-basis: 60%;
+}
+.medlemRight h2{
+  font-size: 106;
+  font-weight: 200;
+  margin: 0;
+}
+.medlemRight p{
+  font-size: 24;
+  font-weight: 600;
+  margin: 0;
+}
+.medlemRight button{
+  background-color: #E04060;
+  border: 1px solid var(--background-color-light);
+  color: white;
+  border-radius: 25px;
+  font-size: 50px;
+  font-weight: 700;
+  padding:10px 100px;
+  cursor:pointer;
+  margin-top: 50px;
+  margin-left: auto;
+}
