@@ -631,6 +631,7 @@ line-height: 1.1;
   padding: 0; /* Optional, unless you need internal padding */
   margin-top: calc(150px + 170px + 95px);
   border-radius: 0 100px 100px 0;
+  margin-bottom: calc(150px + 170px + 95px);
 }
 .nyhedsBrevTitel {
   display: flex;
@@ -685,7 +686,7 @@ footer{
   width: 100%;
   height: 500px;
   background-image: linear-gradient(to bottom, #009D84, #003734);
-  margin-top: calc(150px + 170px + 95px);
+  
   color: white;
   padding: 20px 0px 20px;
   
@@ -749,6 +750,7 @@ footer{
   width: calc(100% - 60px); /* Full width minus 25px on each side */
   margin: 0 auto; /* Push it 25px from each side */
   margin-top: 150px;
+  margin-bottom: 150px;
 }
 .behandlingerText{
   
@@ -875,6 +877,7 @@ margin-bottom: 20px;
   height: fit-content;
   margin: 0 auto;
   margin-top: 200px;
+  margin-bottom: 200px;
 }
 .shapeImage{
   background-size: cover;
@@ -1067,6 +1070,7 @@ margin-bottom: 20px;
   height: fit-content;
   margin: 0 auto;
   margin-top: 100px;
+  margin-bottom: 100px;
   
 }
 
@@ -1157,16 +1161,22 @@ background-image: linear-gradient(to left, #25857B, #40E0C0);
 }
 .medlemRight{
   flex-basis: 60%;
+  display: flex;
+  flex-direction: column;
+   /* or use flex-grow */
+  height: 100%;
 }
 .medlemRight h2{
   font-size: 106;
   font-weight: 200;
   margin: 0;
+  flex-grow: 1;
 }
 .medlemRight p{
   font-size: 24;
   font-weight: 600;
   margin: 0;
+  flex-grow: 1;
 }
 .medlemRight button{
   background-color: #E04060;
@@ -1178,5 +1188,90 @@ background-image: linear-gradient(to left, #25857B, #40E0C0);
   padding:10px 100px;
   cursor:pointer;
   margin-top: 50px;
-  margin-left: auto;
+  width: 700px;
+  
+  
+}
+
+.kontakt{
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+  
+  margin-top: 200px;
+  
+}
+.kontakt h2{
+  margin: 0 auto;
+  width: calc(100% - 60px);
+  text-align: right;
+  font-size: 106px;
+  font-weight: 200;
+  margin-bottom: 20px;
+  
+  
+}
+.kontaktContainer{
+  flex: 1 1 0; /* ✅ allows shrinking if needed */
+ 
+  display: flex;
+  
+  
+}
+.map{
+flex: 1;
+height: 100%;
+}
+.map img{
+  width: 100%;
+  height: 100%;
+  max-height: 100%;         /* ✅ Prevents it from growing larger than container */
+  object-fit: cover;        /* ✅ Ensures it doesn’t stretch, fills nicely */
+  display: block;  
+  
+}
+
+.indbetalinger{
+  flex: 1;
+  background-color: #237A711A;
+  padding: 0 20px;
+}
+.indbetalinger h3{
+  font-size: 64px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.indbetalinger h4{
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+.indbetalinger p{
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
+}
+
+.info{
+  flex: 1;
+  background-color: #40E0C01A;
+  padding: 0 20px;
+}
+.info h3{
+  font-size: 64px;
+  font-weight: 400;
+  margin-top: 20px;
+  margin-bottom: 40px;
+}
+.info h4{
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+.info p{
+  font-size: 24px;
+  font-weight: 400;
+  margin: 0;
 }
